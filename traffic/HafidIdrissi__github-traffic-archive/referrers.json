@@ -78,5 +78,195 @@
         "uniques": 8
       }
     ]
+  },
+  {
+    "taken_on": "2026-09-01",
+    "rows": [
+      {
+        "referrer": "github.com",
+        "count": 109,
+        "uniques": 8
+      }
+    ]
+  },
+  {
+    "taken_on": "2026-09-02",
+    "rows": [
+      {
+        "referrer": "github.com",
+        "count": 109,
+        "uniques": 8
+      }
+    ]
+  },
+  {
+    "taken_on": "2026-09-03",
+    "rows": [
+      {
+        "referrer": "github.com",
+        "count": 109,
+        "uniques": 8
+      }
+    ]
+  },
+  {
+    "taken_on": "2026-09-04",
+    "rows": [
+      {
+        "referrer": "github.com",
+        "count": 115,
+        "uniques": 8
+      }
+    ]
+  },
+  {
+    "taken_on": "2026-09-05",
+    "rows": [
+      {
+        "referrer": "github.com",
+        "count": 118,
+        "uniques": 8
+      }
+    ]
+  },
+  {
+    "taken_on": "2026-09-06",
+    "rows": [
+      {
+        "referrer": "github.com",
+        "count": 134,
+        "uniques": 8
+      }
+    ]
+  },
+  {
+    "taken_on": "2026-09-07",
+    "rows": [
+      {
+        "referrer": "github.com",
+        "count": 134,
+        "uniques": 8
+      }
+    ]
+  },
+  {
+    "taken_on": "2026-09-08",
+    "rows": [
+      {
+        "referrer": "github.com",
+        "count": 129,
+        "uniques": 7
+      }
+    ]
+  },
+  {
+    "taken_on": "2026-09-09",
+    "rows": [
+      {
+        "referrer": "github.com",
+        "count": 129,
+        "uniques": 7
+      }
+    ]
+  },
+  {
+    "taken_on": "2026-09-10",
+    "rows": [
+      {
+        "referrer": "github.com",
+        "count": 130,
+        "uniques": 7
+      }
+    ]
+  },
+  {
+    "taken_on": "2026-09-11",
+    "rows": [
+      {
+        "referrer": "github.com",
+        "count": 124,
+        "uniques": 7
+      }
+    ]
+  },
+  {
+    "taken_on": "2026-09-12",
+    "rows": [
+      {
+        "referrer": "github.com",
+        "count": 111,
+        "uniques": 5
+      }
+    ]
+  },
+  {
+    "taken_on": "2026-09-13",
+    "rows": [
+      {
+        "referrer": "github.com",
+        "count": 87,
+        "uniques": 4
+      }
+    ]
+  },
+  {
+    "taken_on": "2026-09-14",
+    "rows": [
+      {
+        "referrer": "github.com",
+        "count": 52,
+        "uniques": 2
+      }
+    ]
+  },
+  {
+    "taken_on": "2026-09-15",
+    "rows": [
+      {
+        "referrer": "github.com",
+        "count": 51,
+        "uniques": 2
+      }
+    ]
+  },
+  {
+    "taken_on": "2026-09-16",
+    "rows": [
+      {
+        "referrer": "github.com",
+        "count": 51,
+        "uniques": 2
+      }
+    ]
+  },
+  {
+    "taken_on": "2026-09-17",
+    "rows": [
+      {
+        "referrer": "github.com",
+        "count": 51,
+        "uniques": 2
+      }
+    ]
+  },
+  {
+    "taken_on": "2026-09-18",
+    "rows": [
+      {
+        "referrer": "github.com",
+        "count": 45,
+        "uniques": 2
+      }
+    ]
+  },
+  {
+    "taken_on": "2026-09-19",
+    "rows": [
+      {
+        "referrer": "github.com",
+        "count": 42,
+        "uniques": 2
+      }
+    ]
   }
 ]
