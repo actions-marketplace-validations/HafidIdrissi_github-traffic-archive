@@ -149,6 +149,7 @@ This project is intentionally small: it is a practical place to learn Python, Gi
 Useful project links:
 
 - [Contribution guide](CONTRIBUTING.md)
+- [Sharing diagnostics safely](docs/SHARING_DIAGNOSTICS.md)
 - [Open issues](https://github.com/HafidIdrissi/github-traffic-archive/issues)
 - [Feature requests](https://github.com/HafidIdrissi/github-traffic-archive/issues/new?template=feature_request.yml)
 - [Discussions](https://github.com/HafidIdrissi/github-traffic-archive/discussions)
@@ -221,6 +222,8 @@ These endpoints return a top ten for the whole trailing window, not a per-day se
 ### Reading `uniques` correctly
 
 `uniques` is summed per day because that is what GitHub reports. It is **not** a distinct-person count across the full archive: one person visiting on three different days can contribute three daily uniques. Treat it as daily reach, not audience size.
+
+For a fictional worked comparison with GitHub Insights, see [Interpreting archived totals](docs/INTERPRETING_TOTALS.md).
 
 ## What the attestation proves
 

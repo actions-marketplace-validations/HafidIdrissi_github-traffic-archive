@@ -14,6 +14,27 @@ from . import __version__, api, doctor
 from .merge import append_snapshot, merge_timeseries, to_csv_rows, totals
 
 
+def parse_repo_arg(repo_str: str) -> list[str]:
+    """Validate comma-separated --repos entries match 'owner/name' format."""
+    raw_entries = repo_str.split(",")
+    if not raw_entries or all(not r.strip() for r in raw_entries):
+        raise argparse.ArgumentTypeError("Must provide at least one repository in 'owner/name' format.")
+
+    repos: list[str] = []
+    seen: set[str] = set()
+    for raw in raw_entries:
+        repo = raw.strip()
+        parts = repo.split("/")
+        if len(parts) != 2 or not parts[0] or not parts[1]:
+            raise argparse.ArgumentTypeError(
+                f"Invalid repository format '{repo}'. Expected 'owner/name' (e.g. 'owner/repo')."
+            )
+        if repo not in seen:
+            seen.add(repo)
+            repos.append(repo)
+    return repos
+
+
 def _slug(repo: str) -> str:
     return repo.replace("/", "__")
 
@@ -42,19 +63,27 @@ def archive_repo(repo: str, token: str, out: Path, today: str) -> dict[str, int]
     """Fetch one repository's traffic and merge it into the archive."""
     base = out / _slug(repo)
 
+    # A failed fetch must leave this repository's archive unchanged.
+    collected = {
+        "views": api.views(repo, token),
+        "clones": api.clones(repo, token),
+        "referrers": api.referrers(repo, token),
+        "paths": api.paths(repo, token),
+    }
+
     summary: dict[str, int] = {}
-    for metric, fetch in (("views", api.views), ("clones", api.clones)):
+    for metric in ("views", "clones"):
         path = base / f"{metric}.json"
-        merged = merge_timeseries(_read_json(path, []), fetch(repo, token))
+        merged = merge_timeseries(_read_json(path, []), collected[metric])
         _write_json(path, merged)
         _write_csv(base / f"{metric}.csv", to_csv_rows(merged))
         t = totals(merged)
         summary[metric] = t["count"]
         summary[f"{metric}_days"] = t["days"]
 
-    for metric, fetch in (("referrers", api.referrers), ("paths", api.paths)):
+    for metric in ("referrers", "paths"):
         path = base / f"{metric}.json"
-        snaps = append_snapshot(_read_json(path, []), fetch(repo, token), today)
+        snaps = append_snapshot(_read_json(path, []), collected[metric], today)
         _write_json(path, snaps)
 
     return summary
@@ -71,7 +100,11 @@ def main(argv: list[str] | None = None) -> int:
         version=f"%(prog)s {__version__}",
     )
     p.add_argument("--owner", help="Archive every repository owned by this user or org.")
-    p.add_argument("--repos", help="Comma-separated owner/name list. Overrides --owner discovery.")
+    p.add_argument(
+        "--repos",
+        type=parse_repo_arg,
+        help="Comma-separated owner/name list. Overrides --owner discovery.",
+    )
     p.add_argument("--out", default="traffic", help="Output directory (default: traffic).")
     p.add_argument("--include-forks", action="store_true", help="Include forks when using --owner.")
     p.add_argument("--token", default=os.environ.get("GITHUB_TOKEN", ""),
@@ -85,8 +118,13 @@ def main(argv: list[str] | None = None) -> int:
     if not args.owner and not args.repos:
         p.error("Nothing to archive. Pass --repos or --owner.")
 
+    out = Path(args.out)
+    if not args.check and out.is_file():
+        print(f"--out must be a directory, not a file: {out}", file=sys.stderr)
+        return 1
+
     if args.repos:
-        repos = [r.strip() for r in args.repos.split(",") if r.strip()]
+        repos = args.repos
     else:
         repos = api.owned_repos(args.owner, args.token, args.include_forks)
         if not repos:
@@ -96,7 +134,6 @@ def main(argv: list[str] | None = None) -> int:
     if args.check:
         return doctor.run(repos, args.token)
 
-    out = Path(args.out)
     today = dt.datetime.now(dt.timezone.utc).date().isoformat()
 
     failed: list[tuple[str, str]] = []

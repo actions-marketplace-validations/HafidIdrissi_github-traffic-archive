@@ -288,5 +288,470 @@
         "uniques": 2
       }
     ]
+  },
+  {
+    "taken_on": "2026-09-22",
+    "rows": [
+      {
+        "referrer": "github.com",
+        "count": 24,
+        "uniques": 1
+      }
+    ]
+  },
+  {
+    "taken_on": "2026-10-04",
+    "rows": [
+      {
+        "referrer": "github.com",
+        "count": 14,
+        "uniques": 7
+      },
+      {
+        "referrer": "up-for-grabs.net",
+        "count": 4,
+        "uniques": 4
+      }
+    ]
+  },
+  {
+    "taken_on": "2026-10-05",
+    "rows": [
+      {
+        "referrer": "github.com",
+        "count": 17,
+        "uniques": 9
+      },
+      {
+        "referrer": "up-for-grabs.net",
+        "count": 4,
+        "uniques": 4
+      },
+      {
+        "referrer": "DuckDuckGo",
+        "count": 3,
+        "uniques": 1
+      }
+    ]
+  },
+  {
+    "taken_on": "2026-10-06",
+    "rows": [
+      {
+        "referrer": "github.com",
+        "count": 29,
+        "uniques": 9
+      },
+      {
+        "referrer": "up-for-grabs.net",
+        "count": 7,
+        "uniques": 5
+      },
+      {
+        "referrer": "DuckDuckGo",
+        "count": 3,
+        "uniques": 1
+      }
+    ]
+  },
+  {
+    "taken_on": "2026-10-07",
+    "rows": [
+      {
+        "referrer": "github.com",
+        "count": 36,
+        "uniques": 12
+      },
+      {
+        "referrer": "up-for-grabs.net",
+        "count": 6,
+        "uniques": 4
+      },
+      {
+        "referrer": "DuckDuckGo",
+        "count": 3,
+        "uniques": 1
+      }
+    ]
+  },
+  {
+    "taken_on": "2026-10-08",
+    "rows": [
+      {
+        "referrer": "github.com",
+        "count": 36,
+        "uniques": 12
+      },
+      {
+        "referrer": "up-for-grabs.net",
+        "count": 6,
+        "uniques": 4
+      },
+      {
+        "referrer": "DuckDuckGo",
+        "count": 3,
+        "uniques": 1
+      }
+    ]
+  },
+  {
+    "taken_on": "2026-10-09",
+    "rows": [
+      {
+        "referrer": "github.com",
+        "count": 36,
+        "uniques": 12
+      },
+      {
+        "referrer": "up-for-grabs.net",
+        "count": 7,
+        "uniques": 5
+      },
+      {
+        "referrer": "DuckDuckGo",
+        "count": 3,
+        "uniques": 1
+      }
+    ]
+  },
+  {
+    "taken_on": "2026-10-10",
+    "rows": [
+      {
+        "referrer": "github.com",
+        "count": 37,
+        "uniques": 13
+      },
+      {
+        "referrer": "up-for-grabs.net",
+        "count": 6,
+        "uniques": 4
+      },
+      {
+        "referrer": "DuckDuckGo",
+        "count": 3,
+        "uniques": 1
+      }
+    ]
+  },
+  {
+    "taken_on": "2026-10-11",
+    "rows": [
+      {
+        "referrer": "github.com",
+        "count": 35,
+        "uniques": 13
+      },
+      {
+        "referrer": "up-for-grabs.net",
+        "count": 6,
+        "uniques": 4
+      },
+      {
+        "referrer": "DuckDuckGo",
+        "count": 3,
+        "uniques": 1
+      }
+    ]
+  },
+  {
+    "taken_on": "2026-10-12",
+    "rows": [
+      {
+        "referrer": "github.com",
+        "count": 34,
+        "uniques": 12
+      },
+      {
+        "referrer": "up-for-grabs.net",
+        "count": 7,
+        "uniques": 5
+      },
+      {
+        "referrer": "DuckDuckGo",
+        "count": 3,
+        "uniques": 1
+      }
+    ]
+  },
+  {
+    "taken_on": "2026-10-13",
+    "rows": [
+      {
+        "referrer": "github.com",
+        "count": 42,
+        "uniques": 11
+      },
+      {
+        "referrer": "up-for-grabs.net",
+        "count": 14,
+        "uniques": 6
+      },
+      {
+        "referrer": "DuckDuckGo",
+        "count": 3,
+        "uniques": 1
+      }
+    ]
+  },
+  {
+    "taken_on": "2026-10-14",
+    "rows": [
+      {
+        "referrer": "github.com",
+        "count": 44,
+        "uniques": 12
+      },
+      {
+        "referrer": "up-for-grabs.net",
+        "count": 17,
+        "uniques": 7
+      },
+      {
+        "referrer": "DuckDuckGo",
+        "count": 3,
+        "uniques": 1
+      }
+    ]
+  },
+  {
+    "taken_on": "2026-10-15",
+    "rows": [
+      {
+        "referrer": "github.com",
+        "count": 39,
+        "uniques": 7
+      },
+      {
+        "referrer": "up-for-grabs.net",
+        "count": 17,
+        "uniques": 7
+      },
+      {
+        "referrer": "DuckDuckGo",
+        "count": 3,
+        "uniques": 1
+      }
+    ]
+  },
+  {
+    "taken_on": "2026-10-16",
+    "rows": [
+      {
+        "referrer": "github.com",
+        "count": 42,
+        "uniques": 8
+      },
+      {
+        "referrer": "up-for-grabs.net",
+        "count": 17,
+        "uniques": 7
+      },
+      {
+        "referrer": "DuckDuckGo",
+        "count": 3,
+        "uniques": 1
+      }
+    ]
+  },
+  {
+    "taken_on": "2026-10-17",
+    "rows": [
+      {
+        "referrer": "github.com",
+        "count": 43,
+        "uniques": 8
+      },
+      {
+        "referrer": "up-for-grabs.net",
+        "count": 17,
+        "uniques": 6
+      },
+      {
+        "referrer": "DuckDuckGo",
+        "count": 3,
+        "uniques": 1
+      }
+    ]
+  },
+  {
+    "taken_on": "2026-10-18",
+    "rows": [
+      {
+        "referrer": "github.com",
+        "count": 44,
+        "uniques": 9
+      },
+      {
+        "referrer": "up-for-grabs.net",
+        "count": 17,
+        "uniques": 6
+      },
+      {
+        "referrer": "DuckDuckGo",
+        "count": 3,
+        "uniques": 1
+      }
+    ]
+  },
+  {
+    "taken_on": "2026-10-19",
+    "rows": [
+      {
+        "referrer": "github.com",
+        "count": 40,
+        "uniques": 9
+      },
+      {
+        "referrer": "up-for-grabs.net",
+        "count": 17,
+        "uniques": 6
+      }
+    ]
+  },
+  {
+    "taken_on": "2026-10-20",
+    "rows": [
+      {
+        "referrer": "github.com",
+        "count": 40,
+        "uniques": 9
+      },
+      {
+        "referrer": "up-for-grabs.net",
+        "count": 17,
+        "uniques": 6
+      }
+    ]
+  },
+  {
+    "taken_on": "2026-10-21",
+    "rows": [
+      {
+        "referrer": "github.com",
+        "count": 21,
+        "uniques": 5
+      },
+      {
+        "referrer": "up-for-grabs.net",
+        "count": 19,
+        "uniques": 6
+      }
+    ]
+  },
+  {
+    "taken_on": "2026-10-22",
+    "rows": [
+      {
+        "referrer": "github.com",
+        "count": 21,
+        "uniques": 5
+      },
+      {
+        "referrer": "up-for-grabs.net",
+        "count": 19,
+        "uniques": 6
+      }
+    ]
+  },
+  {
+    "taken_on": "2026-10-23",
+    "rows": [
+      {
+        "referrer": "github.com",
+        "count": 21,
+        "uniques": 5
+      },
+      {
+        "referrer": "up-for-grabs.net",
+        "count": 18,
+        "uniques": 5
+      }
+    ]
+  },
+  {
+    "taken_on": "2026-10-24",
+    "rows": [
+      {
+        "referrer": "github.com",
+        "count": 20,
+        "uniques": 4
+      },
+      {
+        "referrer": "up-for-grabs.net",
+        "count": 18,
+        "uniques": 5
+      }
+    ]
+  },
+  {
+    "taken_on": "2026-10-25",
+    "rows": [
+      {
+        "referrer": "github.com",
+        "count": 22,
+        "uniques": 5
+      },
+      {
+        "referrer": "up-for-grabs.net",
+        "count": 18,
+        "uniques": 5
+      }
+    ]
+  },
+  {
+    "taken_on": "2026-10-26",
+    "rows": [
+      {
+        "referrer": "github.com",
+        "count": 22,
+        "uniques": 5
+      },
+      {
+        "referrer": "up-for-grabs.net",
+        "count": 18,
+        "uniques": 5
+      }
+    ]
+  },
+  {
+    "taken_on": "2026-10-27",
+    "rows": [
+      {
+        "referrer": "github.com",
+        "count": 14,
+        "uniques": 5
+      },
+      {
+        "referrer": "up-for-grabs.net",
+        "count": 10,
+        "uniques": 5
+      },
+      {
+        "referrer": "Google",
+        "count": 1,
+        "uniques": 1
+      }
+    ]
+  },
+  {
+    "taken_on": "2026-10-28",
+    "rows": [
+      {
+        "referrer": "github.com",
+        "count": 11,
+        "uniques": 5
+      },
+      {
+        "referrer": "up-for-grabs.net",
+        "count": 7,
+        "uniques": 3
+      },
+      {
+        "referrer": "Google",
+        "count": 1,
+        "uniques": 1
+      }
+    ]
   }
 ]
